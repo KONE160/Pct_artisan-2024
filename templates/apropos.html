@@ -1,148 +1,66 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="fr">
+{% block title %}A Propos{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <style>
-        .carousel-container {
-            max-width: 50%;
-            /* Réduire la largeur à 50% */
-            margin: auto;
-            /* Centrer le carousel */
-
-        }
-
-        .navbar-custom {
-            background-color: #008000;
-        }
-
-        .navbar-custom .navbar-brand,
-        .navbar-custom .nav-link {
-            color: white;
-            font-weight: bold;
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background-color: #008000;
-            border-radius: 0 10px 10px 0;
-            padding: 10px;
-            z-index: 1000;
-        }
-
-        .sidebar a {
-            color: white;
-            display: block;
-            text-align: center;
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="#"></a>
-        <img width="60px" height="40px" src=" {% static 'artisanfinder/images/logo3.png' %}" alt="logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services/">Nos services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/artisan/">Trouver un artisan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/espaceArtisan/">Espace artisan</a>
-                </li>
-                <li class="nav-item">
-
-                    <a class="nav-link" href="/connexion/">Connexion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">Nous contacter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/apropos/">À propos</a>
-                </li>
-            </ul>
+{% block content %}
+<main>
+    <div class="container">
+        <h1 class="text-center my-3">Qui sommes-nous ? </h1>
+        <div>
+            <h2>Entreprise 22 </h2>
+            <p>Connectez-vous avec des artisans locaux talentueux prêts à vous servir avec passion et expertise.</p>
         </div>
-    </nav>
-
-    <!-- Sidebar with Social Icons -->
-    <div class="sidebar">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <hr style="border: none; border-bottom: 3px solid green; width: 30%">
+        <div class="m-5">Bienvenue sur Entreprise 22, votre plateforme dédiée à la mise en relation de particuliers avec
+            des artisans locaux. Notre mission est de simplifier votre recherche de services professionnels en vous
+            connectant directement avec des artisans qualifiés. Que vous ayez besoin d'un plombier, d'un électricien,
+            d'un coiffeur à domicile ou d'autres services spécialisés, Entreprise 22 est là pour vous aider à trouver
+            rapidement et efficacement la solution adaptée à vos besoins. Nous nous engageons à promouvoir la qualité du
+            service et la satisfaction client, tout en soutenant nos artisans locaux dans leur développement
+            professionnel. Explorez notre plateforme et découvrez comment Entreprise 2 facilite la vie quotidienne en
+            mettant l'accent sur la fiabilité, la proximité et l'excellence du service.
+        </div>
+        <div class="row">
+            <div class="col-md-8 bg-green d-flex align-items-center justify-content-center p-4">
+                <h2 class="text-center text-white">Trouvez vos artisans locaux dès aujourd'hui!</h2>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img src="{% static 'artisanfinder/images/artisann.jpg' %}" alt="" class="img-fluid vertical-frame">
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h4 class="container text-center ">Notre objectif est de faciliter la vie des particuliers en leur
+                offrant un accès simple et rapide à des artisans qualifiés et fiables.</h4>
+                br
+            <h2 class="section-title text-center mb-5">Nos Valeurs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="value-card text-center">
+                        <h3 class="value-title">Qualité</h3>
+                        <p class="value-content">Nous nous assurons que chaque prestation soit à la hauteur des attentes
+                            de nos clients. Nos artisans sont sélectionnés sur des critères rigoureux pour garantir un
+                            service de qualité supérieure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="value-card text-center">
+                        <h3 class="value-title">Confiance</h3>
+                        <p class="value-content">Nous vérifions les qualifications et les avis de chaque artisan pour
+                            assurer une totale transparence. Votre satisfaction et votre sécurité sont notre
+                            priorité.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="value-card text-center">
+                        <h3 class="value-title">Accessibilité</h3>
+                        <p class="value-content">Notre plateforme est conçue pour être facile à utiliser par tout le
+                            monde. Nous nous engageons à rendre nos services accessibles à tous, peu importe leur niveau
+                            de compétence numérique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</main>
 
-
-    <h5 class="display-6 text-center my-3">A propos : </h5>
-
-</body>
-
-
-
-<!-- Le pieds de pages -->
-<footer class="footer p-5">
-    <br>
-    <br>
-    <div class="row bg-success">
-        <ul class="col-12 text-center my-3">
-            <li class="d-inline-block m-3">
-                <a href="/mentions-legales" title="Vers la page les mentions légales de l'entreprise 22" rel="nofollow"
-                    class="text-decoration-none text-white">Mentions légales</a>
-            </li>
-            <li class="d-inline-block m-3">
-                <a href="/rgpd-cookies" title="Vers la page vie privée du site Artisan Finder" rel="nofollow"
-                    class="text-decoration-none text-white">Vie privée</a>
-            </li>
-            <li class="d-inline-block m-3">
-                <a href="/conditions-generales-utilisation"
-                    title="Vers la page des conditions générales d'utilisation du Artisan Finder" rel="nofollow"
-                    class="text-decoration-none text-white">CGU</a>
-            </li>
-            <li class="d-inline-block m-3">
-                <a href="/conditions-generales-de-vente"
-                    title="Vers la page des conditions générales de vente du site Artisan Finder" rel="nofollow"
-                    class="text-decoration-none text-white">CGV</a>
-            </li>
-            <li class="d-inline-block m-3">
-                <a href="/equipe" title="Vers la page de l'équipe" rel="nofollow"
-                    class="text-decoration-none text-white">Equipe</a>
-            </li>
-            <li class="d-inline-block m-3">
-                <a href="/contact" title="Vers la page de contact" rel="nofollow"
-                    class="text-decoration-none text-white">Contact</a>
-            </li>
-        </ul>
-        <p class="text-white text-center">© Entreprise 22 2024</p>
-    </div>
-</footer>
-
-</html>
+<!-- Le pieds de pages -->{% endblock %}

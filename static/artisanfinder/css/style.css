@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.body{
+ font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,form,footer,nav{
+font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.carousel-container {
+    max-width: 50%;
+    margin: auto;
+}
+
+.navbar-custom {
+    background-color: #008000;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #008000;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.vertical-frame {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-green {
+    background-color: #008000;
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.value-title {
+    font-size: 1.75rem;
+    color: #4ade80;
+}
+
+.value-content {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.value-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+#map {
+            height: 500px;
+            width: 100%;
+        }
+        
+.login-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #008000;
+            animation: border-animation 2s infinite;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @keyframes border-animation {
+            0% {
+                border-color: #008000;
+            }
+
+            50% {
+                border-color: #00ff00;
+            }
+
+            100% {
+                border-color: #008000;
+            }
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-box .form-group {
+            margin-bottom: 15px;
+        }
+
+        .login-box .btn-primary {
+            background-color: #008000;
+            border-color: #008000;
+        }
+
+        .login-box .btn-primary:hover {
+            background-color: #006400;
+            border-color: #006400;
+        }
+
+        .login-box .form-check-label {
+            font-weight: normal;
+        }
+
+        .login-box .links a {
+            color: #008000;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .login-box .links a:hover {
+            text-decoration: underline;
+        }
