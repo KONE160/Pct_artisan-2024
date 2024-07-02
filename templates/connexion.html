@@ -12,15 +12,16 @@
                 style="font-weight: 800; color: #008000;">Connexion
             </h3>
             <form>
+                {% csrf_token %}
                 <div class="form-group">
                     <label for="phone"><h5>Numéro de téléphone (*)</h5></label>
-                    <input type="text" class="form-control" id="phone" placeholder="Entrer votre numéro de téléphone (10 chiffres)"
+                    <input type="text" class="form-control" id="phone" placeholder="Numéro de téléphone "
                         maxlength="10" required>
 
                 </div>
                 <div class="form-group">
                     <label for="password"><h5>Mot de passe (*)</h5></label>
-                    <input type="password" class="form-control" id="password" placeholder="Entrer votre mot de passe (minimum 6 caractères)"
+                    <input type="password" class="form-control" id="password" placeholder="Mot de passe "
                         minlength="6" required>
                 </div>
                 <div class="form-group form-check">
@@ -34,8 +35,8 @@
 
 
                 <div class="links mt-3">
-                    <small data-v-831623fc="" class="text-secondary">Pas encore inscrit(e) ?</small>
-                    <a href="#">S'inscrire</a> | <a href="#">Mot de passe oublié ?</a>
+                    <small class="text-secondary">Pas encore inscrit(e) ?</small>
+                    <a href="/register/">S'inscrire</a> | <a href="/password-oublie/">Mot de passe oublié ?</a>
                 </div>
             </form>
         </div>
