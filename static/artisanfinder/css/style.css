@@ -435,6 +435,15 @@ h2 a:hover {
     align-items: stretch;
     flex-wrap: wrap;
 } 
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+} 
+
  .arti img {
     display: flex;
     flex-wrap: wrap;
