@@ -26,6 +26,9 @@ EMAIL_HOST_USER = 'email'
 EMAIL_HOST_PASSWORD = 'password'
 
 
+AUTH_USER_MODEL = "users_management.UserManage" 
+AUTH_USER_MODEL = 'ArtisanFinder.Artisan'
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -88,14 +91,15 @@ DATABASES = {
     
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'artisan finder',
+        'NAME': 'Artisan_DB',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '3306'
-    }
-     ,
-    
+        
+    },
+      
+     
     'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -146,3 +150,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images/')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Par défaut
+    'ArtisanFinder.backends.TelephoneBackend',        # Votre backend personnalisé
+]
